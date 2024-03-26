@@ -1,0 +1,92 @@
+body {
+    background-color:white
+}
+main {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 70px;
+}
+header {
+    width: 1500px;
+    height: 320px;
+}
+.bookshelfbanner {
+    height: 20px;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    float: left;
+    margin-top: 145px;
+    margin-left: 100px;
+}
+.topnav {
+    float: left;
+    position: relative;
+    height: 60px;
+    width: 1000px;
+    float: left;
+    margin-top: 280px;
+}
+.topnav a {
+    float: left;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    color:#664229;
+}
+.topnav a:hover {
+    font-weight: bold;
+    color:white;
+    background-color:#664229;
+    transition: background-color 0.3s, color 0.3s;
+}
+.topnav a.active {
+    color:white;
+    background-color:#664229;
+}
+.banners {
+    width: 1400px;
+    column-count: 2;
+    column-gap: 100px;
+    float: left;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.banners div {
+    float: left;
+    width: 600px;
+}
+.communityLibraryHeader {
+    color: #664229;
+    font-weight: bold;
+    font-size: medium;
+}
+.currentLibrary {
+    width: 1400px;
+    column-count: 5;
+    column-gap: 40px;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.currentLibrary div {
+    width: 180px;
+    text-align: center;
+    padding-top: 20px;
+}
+.currentLibrary a {
+    text-decoration: none;
+    color: #664229;
+    font-size: 11px;
+}
+footer {
+    padding-top: 50px;
+    margin-right: 100px;
+    background-color: yellow;
+    float: right;
+}
