@@ -1,0 +1,97 @@
+body {
+    background-color:white;
+}
+main {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 70px;
+}
+header {
+    width: 1500px;
+    height: 320px;
+}
+.bookshelfbanner, .bookshelfbanner img{
+    height: 300px;
+    width: 98vw;
+    position: absolute;
+}
+.logo {
+    position: absolute;
+    float: left;
+    margin-top: 165px;
+    margin-left: 100px;
+}
+.topnav {
+    float: left;
+    position: relative;
+    height: 60px;
+    width: 1000px;
+    float: left;
+    margin-top: 300px;
+}
+.topnav a {
+    float: left;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    color:#664229;
+}
+.topnav a:hover {
+    font-weight: bold;
+    color:white;
+    background-color:#664229;
+    transition: background-color 0.3s, color 0.3s;
+}
+.topnav a.active {
+    color:white;
+    background-color:#664229;
+}
+.checkoutheader {
+    color: #664229;
+    font-weight: bold;
+    font-size: large;
+}
+.series {
+    background-color: yellow;
+    width: 500px;
+    height: 400px;
+    padding-left: 20px;
+    padding-top: 20px;
+    float: left;
+}
+.series h2 {
+    color: #664229;
+}
+.hidden {
+    display: none;
+}
+/**
+.volume {
+    background-color: aqua;
+    display: grid;
+    float: right;
+    margin-right: 250px;
+    width: 600px;
+    height: 600px;
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: left;
+}
+.volume h2 {
+    color: #664229;
+}
+.date h2 {
+    color: #664229;
+}**/
+form #startdate {
+    height: 200px;
+    width: 200px;
+}
+form #enddate {
+    height: 200px;
+    width: 200px;
+}
