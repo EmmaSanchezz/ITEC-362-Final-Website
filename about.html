@@ -36,6 +36,57 @@
         <p>Bookshelves is similar to your local library, except it contains only books from my personal library, most of which are Manga with the exception of a few fiction novels.</p>
         <h2>History</h2>
         <p>In Spring of 2024, Emma Sanchez was attending the University of South Carolina and was taking ITEC362. She was told to create a website of her own. From there, she played back and forth with the idea of making a website similar to GoodReads where you can connect with friends to keep track of books you read and encourage others to read. She disliked that idea and turned to the idea of making her website similar to Barnes and Noble, but on a smaller scale. I created this website to provide the community of Columbia with convenience and reliability when looking to checkout books from my personal library.</p>
+        <section>
+            <h2>Want something we don't have? Request it here!</h2>
+            <form id="request-form" onsubmit="return validateForm()">
+                <div class="form">
+                    <label for="firstname">First Name</label><br>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+                <div class="form">
+                    <label for="lastname">Last Name</label><br>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+                <div class="form">
+                    <label for="email">Contact Email</label><br>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                <div class="request-box">
+                    <label for="request">Let us know your request!</label><br>
+                    <textarea id="request" name="request" rows="4" cols="25" required></textarea>
+                </div>
+                <div class="form-submit-button">
+                    <input type="submit" value="Submit">
+                </div> 
+            </form>
+            <script>
+                function validateForm() {
+                    var firstName = document.getElementById('firstname').value;
+                    var lastName = document.getElementById('lastname').value;
+                    var email = document.getElementById('email');
+                    var message = document.getElementById('request').value;
+
+                    if (firstName.trim() === '') {
+                        alert('You must enter your first name.');
+                        return false;
+                    }
+                    if (lastName.trim() === '') {
+                        alert('You must enter your last name.');
+                        return false;
+                    }
+                    if (email.trim() === '') {
+                        alert('You must enter a contact email.');
+                        return false;
+                    }
+                    if (message.trim() === '') {
+                        alert('You must enter a request message.');
+                        return false;
+                    }
+                    alert('Thank you for completing this! We will get back to you shortly.');
+                    return true; 
+                }
+            </script>
+        </section>
     </main>
 </body>
 <footer>
