@@ -50,13 +50,8 @@ header {
     color:white;
     background-color:#664229;
 }
-.banners {
-    width: 100%;
-    column-count: 2;
-    column-gap: 100px;
-    float: left;
-    padding-top: 40px;
-    padding-bottom: 40px;
+.slideshow-container img {
+    margin-left: 200px;
 }
 .communityLibraryHeader {
     float: left;
